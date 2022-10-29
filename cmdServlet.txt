@@ -1,0 +1,16 @@
+1) ../glassfish6/bin/asadmin start-domain
+      //(checkbrowser http://localhost:8080)
+
+2)   ../glassfish6/bin/asadmin deploy BasicWebApp1
+    ../glassfish6/bin/asadmin undeploy BasicWebApp1
+   ../glassfish6/bin/asadmin deploy BasicWebApp1
+	//http://localhost:8080/SurajWebApp/welcome.html
+
+3) export CLASSPATH=../glassfish6/glassfish/lib/javaee.jar:.
+
+4)  javac -d BasicWebApp1/WEB-INF/classes/ src/*.java
+
+5) touch BasicWebApp1/.reload
+	//http://localhost:8080/SurajWebApp/welcome
+
+6) ../glassfish6/bin/asadmin stop-domain
