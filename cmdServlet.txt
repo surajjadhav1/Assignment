@@ -12,5 +12,7 @@
 
 5) touch BasicWebApp1/.reload
 	//http://localhost:8080/SurajWebApp/welcome
+	
+6) ../glassfish6/bin/asadmin undeploy SurajWebApp
 
-6) ../glassfish6/bin/asadmin stop-domain
+7) ../glassfish6/bin/asadmin stop-domain
